@@ -4,7 +4,7 @@ import { RoomContext } from '../context';
 
  const Home = () => {
      const context = useContext(RoomContext)
-     console.log('data is ',context)
+     console.log('contrext data is ',context)
     return (
         <div>
             Hello From home
