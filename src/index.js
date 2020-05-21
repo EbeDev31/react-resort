@@ -6,16 +6,19 @@ import Home from './pages/home'
 import Rooms from './pages/rooms'
 import SingleRoom from './pages/singleRoom'
 import './App.css'
+import RoomProvider from './context'
 
 const App = () => {
     return (
         <Router>
+            <RoomProvider>
             <Nav/>
             <Switch>
-                <Route path='/home' component={Home}></Route>
+                <Route path='/' component={Home}></Route>
                 <Route path='/rooms' component={Rooms}></Route>
                 <Route path='/singleRoom/:id' component={SingleRoom}></Route>
             </Switch>
+            </RoomProvider>
         </Router>
     )
 }
