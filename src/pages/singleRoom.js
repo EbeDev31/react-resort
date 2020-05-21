@@ -1,9 +1,10 @@
 import React from 'react'
 
-export const singleRoom = () => {
+const SingleRoom = () => {
     return (
         <div>
             Hello From singleRooms
         </div>
     )
 }
+export default SingleRoom
