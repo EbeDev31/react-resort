@@ -1,8 +1,5 @@
 import React, {useContext, createContext} from 'react'
 
-
-  
-  //const ThemeContext = React.createContext(themes.light);
 export const RoomContext = createContext()
 const RoomProvider = (props) => {
   const themes = {
