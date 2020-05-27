@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import Hero from '../components/Hero';
+import Filter from '../components/Filter';
+import FilteredRoom from '../components/FilteredRooms';
 
  const Rooms = () => {
     return (
         <div>
-            Hello From Rooms
+            <section>
+                <Hero/>
+            </section>
+            <section>
+                Search Rooms
+                <Filter/>
+                <FilteredRoom/>
+
+            </section>
         </div>
     )
 };

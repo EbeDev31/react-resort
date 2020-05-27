@@ -3,15 +3,19 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
     return (
-        <nav>
+        <nav className="navbar">
             <div className="nav-center">
-                Nav Center
+                <div className="nav-header">
+                    <a href="/"><img src="../images/logo.svg" alt="Beach Resort"/></a>
+                </div>
+                <ul className='nav-links'>
+                    <li><Link to='/'>Home</Link> </li>
+                    <li><Link to='/rooms'>Rooms</Link> </li>
+                </ul>
             </div>
-            <ul>
-                <li><Link to='/home'>Home</Link> </li>
-                <li><Link to='/rooms'>Rooms</Link> </li>
-            </ul>
         </nav>
     )
 };
 export default Nav
+
+
