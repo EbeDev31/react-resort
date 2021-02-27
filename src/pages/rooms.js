@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Hero from '../components/Hero';
 import Filter from '../components/Filter';
-import FilteredRoom from '../components/FilteredRooms';
+import Title from '../components/Title';
+import DisplayedRooms from '../components/DisplayedRooms';
 
- const Rooms = () => {
+const Rooms = () => {
+  
+    const banner = {
+        title: 'Our Rooms',
+        buttonName: 'return home'
+    };
     return (
         <div>
             <section>
-                <Hero/>
+                <Hero banner={banner} />
             </section>
-            <section>
-                Search Rooms
+            <section className='filter-section'>
+                <Title title='Search Rooms'/>
                 <Filter/>
-                <FilteredRoom/>
-
+                <DisplayedRooms/>
             </section>
         </div>
     )

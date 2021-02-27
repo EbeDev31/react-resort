@@ -8,8 +8,8 @@ import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
 
 const Home = () => {
     const context = useContext(RoomContext)
+    const { featuredRooms } = context;
     console.log('context data is a', context)
-    const { featuredRooms } = context.state;
     const banner = {
         title: 'Luxurious Rooms',
         message: 'Deluxe Rooms Starting at £299',
