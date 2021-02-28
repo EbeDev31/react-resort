@@ -9,39 +9,6 @@ import SingleRoom from './pages/singleRoom'
 import './App.css'
 import RoomProvider, { RoomContext } from './context'
 import Error from './components/Error';
-import UserList from './UwTest/UserList'
-
-
-
-export const Playg = () => {
-    const contexta = useContext(RoomContext)
-    console.log('mahh?', contexta)
-
-    // const [state, setState] = useState({
-    //     name: '',
-    //     pass: ''
-    // })
-    // useEffect(()=>{
-    //   findFeaturedRooms()
-    // })
-
-    const findFeaturedRooms = () => {
-        console.log('amen', contexta)
-        // const featuredRooms =state.roomsData.filter(room=>room.featured===true);
-        // return featuredRooms;
-    }
-    return (
-
-
-        <div>
-            <form>
-                <input name='name' />
-                <input name='pass' />
-                {findFeaturedRooms()}
-            </form>
-        </div>
-    )
-}
 
 const App = () => {
     return (
